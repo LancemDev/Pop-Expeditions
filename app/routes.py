@@ -1,7 +1,4 @@
-from flask import render_template
-from app import app
-# from app.models import User, Post
-
+from flask import render_template, current_app as app
 
 @app.route('/')
 def index():
