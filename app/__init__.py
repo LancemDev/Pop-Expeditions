@@ -1,16 +1,24 @@
+import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
 def create_app():
-    app = Flask(__name__)
-    app.config.from_object('config.Config')
+    app = Flask(__name__, instance_path='/tmp')
 
+    # Configuration
+    app.config.from_mapping(
+        SECRET_KEY='your_secret_key',
+        SQLALCHEMY_DATABASE_URI='sqlite:///your_database.db',
+        SQLALCHEMY_TRACK_MODIFICATIONS=False,
+    )
+
+    # Initialize extensions
     db.init_app(app)
 
-    with app.app_context():
-        from . import routes
-        db.create_all()
+    # Register blueprints
+    from .views import main as main_blueprint
+    app.register_blueprint(main_blueprint)
 
     return app
