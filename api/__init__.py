@@ -9,8 +9,8 @@ def create_app():
 
     # Configuration
     app.config.from_mapping(
-        SECRET_KEY='your_secret_key',
-        SQLALCHEMY_DATABASE_URI='sqlite:///your_database.db',
+        SECRET_KEY=os.environ.get('SECRET_KEY', 'default_secret_key'),
+        SQLALCHEMY_DATABASE_URI=os.environ.get('DATABASE_URL', 'sqlite:///your_database.db'),
         SQLALCHEMY_TRACK_MODIFICATIONS=False,
     )
 
@@ -18,7 +18,7 @@ def create_app():
     db.init_app(app)
 
     # Register blueprints
-    from .views import main as main_blueprint
+    from .routes import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
     return app
