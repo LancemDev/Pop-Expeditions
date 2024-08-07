@@ -162,31 +162,35 @@ nav ul li .button-list:hover {
     color: rgb(255, 255, 255);
     padding: 14px 17px;
     margin-top: 32vh;
-    text-align: center;
+    text-align: left;
     vertical-align: center;
 }
 
 .title h1{
     font-size: 10vh;
-    text-shadow: 2px black;
+    /* text-shadow: 2px rgb(253, 250, 250); */
     transition: ease 0.3s;
+    color:transparent;
+    -webkit-text-stroke: 1px white;
 }
 
 .title h1:hover{
-    color:transparent;
+    color: 2px rgb(192, 167, 40);;
     -webkit-text-stroke: 1px white;
     
+}
+
+.left-align {
+    text-align: left;
 }
 
 .button{
     display: inline-block;
     margin-top:5vh;
-    font-size: 25px;
+    font-size: 15px;
     padding: 10px 30px;
     color: #FF8225;
     /* background-color:rgb(164, 44, 44); */
-    background-color: white;
-    border-radius: 4px;
     text-decoration: none;
     transition: ease 0.30s;
 }
@@ -438,9 +442,72 @@ nav ul li .button-list:hover {
 
 /* Footer */
 
+/* 
+h1, h2, h3 {
+    font-family: 'Paytone One', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.icon-text i {
+    font-size: 24px;
+    color: #ff6347;
+    margin-right: 10px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    width: calc(33.333% - 20px);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    margin: 5px 0;
+    color: #666;
+} */
+
 .footer{
     margin-top: 80px;
-    background-color: #FF8225;
 }
 
 .foot{
@@ -528,7 +595,7 @@ nav ul li .button-list:hover {
 /* About Us */
 
 .aboutbody{
-    background-color: #191919;
+    background-color: #f8f5f5;
 }
 
 .about{
