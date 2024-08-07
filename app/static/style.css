@@ -187,10 +187,12 @@ nav ul li .button-list:hover {
 .button{
     display: inline-block;
     margin-top:5vh;
-    font-size: 15px;
+    font-size: 25px;
     padding: 10px 30px;
     color: #FF8225;
     /* background-color:rgb(164, 44, 44); */
+    background-color: white;
+    border-radius: 4px;
     text-decoration: none;
     transition: ease 0.30s;
 }
