@@ -17,8 +17,8 @@
 
 /* Home page */
 
-.banner{
-    width:100%;
+.banner {
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     display: flex;
@@ -26,7 +26,7 @@
     align-items: center;
 }
 
-.banner video{
+.banner.video-background video {
     position: absolute;
     top: 0;
     left: 0;
@@ -36,12 +36,28 @@
     pointer-events: none;
 }
 
-.content{
+.banner.image-background {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 70vh; /* Adjust the height as needed */
+    animation: slideshow 20s infinite;
+}
+
+@keyframes slideshow {
+    0% { background-image: url(./files/safari1.jpg); }
+    25% { background-image: url(./files/safari2.jpg); }
+    50% { background-image: url(./files/safari3.jpg); }
+    75% { background-image: url(./files/safari4.jpg); }
+    100% { background-image: url(./files/safari5.jpg); }
+}
+
+.content {
     position: relative;
     z-index: 1;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(1, 0, 5, 0.3),rgba(4, 1, 17, 0.3));
+    background-image: linear-gradient(rgba(1, 0, 5, 0.3), rgba(4, 1, 17, 0.3));
 }
 
 nav {
@@ -58,19 +74,28 @@ nav {
 }
 
 nav.scrolled {
-    background-color: rgb(62, 32, 1);
+    background-color: #FF8225;
 }
 
 nav .logo {
     width: 60px;
-    margin: 2vh;
+    margin: 1vh; /* Reduce margin to decrease height */
     margin-left: 8%;
 }
 
-nav ul li {
+nav ul {
+    display: flex;
+    align-items: center;
     list-style: none;
-    display: inline-block;
-    margin-left: 40px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Allow ul to grow and take available space */
+    justify-content: center; /* Center the items */
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 10px; /* Reduce margin for more compact look */
 }
 
 .navbar {
@@ -86,22 +111,73 @@ nav ul li {
     border-radius: 4px;
     font-weight: 500;
     text-decoration: none;
-    transition: ease 0.40s;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for hover effect */
+    white-space: nowrap;
 }
 
 .navbar a:hover, .navbar a.active {
-    /* background: white;
-     */
     -webkit-text-fill-color: rgb(1, 32, 62); 
     color: black;
-    /* box-shadow: 5px 10px 30px rgb(85 85 85 / 20%); */
     border-radius: 5px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 17px;
+    font-size: 16px; /* Reduce font size for minimalistic look */
+}
+
+/* Dropdown menu styles */
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 4px;
+    padding: 5px 0; /* Add padding to the dropdown */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Add transition for animation */
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li .dropdown a {
+    display: block;
+    padding: 5px 20px; /* Reduce padding for minimalistic look */
+    color: #030303;
+    text-decoration: none;
+    font-size: 14px; /* Smaller text size */
+    white-space: nowrap;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for hover effect */
+}
+
+nav ul li .dropdown a:hover {
+    background-color: #b9d2f1;
+    color: #03346E;
+    border-radius: 5px;
+}
+
+nav ul li .button-list {
+    background-color: #FF8225;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+nav ul li .button-list:hover {
+    background-color: #FF8225;
+    border-radius: 4px;
+    transform: scale(1.1);
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
+    padding: 10px 30 px;
 }
 
 .title{
@@ -123,8 +199,7 @@ nav ul li a {
 
 .title h1:hover{
     color:transparent;
-    -webkit-text-stroke: 1px white;
-    
+    -webkit-text-stroke: 1px white;   
 }
 
 .button{
@@ -132,10 +207,10 @@ nav ul li a {
     margin-top:5vh;
     font-size: 25px;
     padding: 10px 30px;
-    color: rgb(62, 32, 1);
+    color: #FF8225;
     /* background-color:rgb(164, 44, 44); */
     background-color: white;
-    border-radius: 20px;
+    border-radius: 4px;
     text-decoration: none;
     transition: ease 0.30s;
 }
@@ -143,7 +218,7 @@ nav ul li a {
 .button:hover{
     transform: scale(1.1);
     color: white;
-    background-color: rgb(62, 32, 1);
+    background-color: #FF8225;
     /* border: 2px solid rgb(42, 37, 68); */
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
     padding: 10px 30px;
@@ -368,7 +443,7 @@ nav ul li a {
     border: 2px solid transparent;
     border-radius: 20px;
     color: white;
-    background-color: rgb(62, 32, 1);
+    background-color: #FF8225;
     padding: 14px 30px;
     cursor: pointer;
     font-size: 17px;
@@ -379,9 +454,9 @@ nav ul li a {
 }
 
 .newsletter form input:last-child:hover{
-    border: 2px solid rgb(62, 32, 1);
+    border: 2px solid #FF8225;
     background-color: white;
-    color: rgb(62, 32, 1);
+    color: #FF8225;
 }
 
 
@@ -416,6 +491,8 @@ nav ul li a {
 }
 
 
+
+
 .footlinks h4::before{
     content: "";
     position: absolute;
@@ -440,14 +517,16 @@ nav ul li a {
 .footlinks ul li a:hover{
     transform: translate(6px);
     color: white;
+    -webkit-text-fill-color: #03346E;
 }
+
 
 .social a{
     font-size: 25px;
     margin: 4px;
     height: 40px;
     width: 40px;
-    color: rgb(62, 32, 1);
+    color: #FF8225;
     background-color: white;
     display: inline-flex;
     justify-content: center;
@@ -756,7 +835,7 @@ nav ul li a {
 }
 
 .contact-form h1 span{
-    color:#fc0050;
+    color:#03346E;
 }
 
 .contact-form p{
@@ -782,7 +861,7 @@ nav ul li a {
 
 .contact-form form .submit-btn{
     display: inline-block;
-    background-color: #fc0050;
+    background-color: #03346E;
     font-size: 27px;
     font-weight: 600px;
     border: 2px solid transparent;
@@ -794,7 +873,7 @@ nav ul li a {
 }
 
 .contact-form form .submit-btn:hover{
-    border: 2px solid #fc0050;
+    border: 2px solid #03346E;
     background-color: transparent;
     transform: scale(1.1);
 
@@ -821,7 +900,7 @@ nav ul li a {
     margin-bottom: 20px;
 }
 .register-form h1 span{
-    color: #fc0050;
+    color: #03346E;
 }
 
 .register-form{
@@ -844,13 +923,13 @@ nav ul li a {
     font-size: 22px;
     font-weight: 500;
     margin-top: 20px;
-    color: #fc0050;
+    color: #03346E;
 }
 
 
 .register-form form .submitbtn{
     display: inline-block;
-    background-color: #fc0050;
+    background-color: #03346E;
     font-size: 27px;
     font-weight: 600px;
     border: 2px solid transparent;
@@ -861,7 +940,7 @@ nav ul li a {
 }
 
 .register-form form .submitbtn:hover{
-    border: 2px solid #fc0050;
+    border: 2px solid #03346E;
     background-color: transparent;
     transform: scale(1.1);
 }
@@ -885,12 +964,12 @@ nav ul li a {
 }
 
 .location-heading h1 span{
-    color: #fc0050;
+    color: #03346E;
 }
 
 .location-detail h1{
     padding-top: 60px;
-    color: #fc0050;
+    color: #03346E;
     font-size: 40px;
 }
 

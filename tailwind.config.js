@@ -7,7 +7,11 @@ module.exports = {
     './app/static/*.css'      // Include all CSS files in the static directory
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customOrange: '#FF8225',
+      },
+    },
   },
   plugins: [],
 }
