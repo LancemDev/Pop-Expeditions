@@ -20,7 +20,7 @@
 
 <!-- Background Video & Header -->
 
-    <div class="banner">
+    <div class="banner video-background">
         <video src="{{ url_for('static', filename='files/bgvid.mp4') }}" type="video/mp4" autoplay muted loop></video>
     
     <!-- Header -->
@@ -36,10 +36,11 @@
                 <li>
                     <a href="/destinations">Destinations</a>
                     <ul class="dropdown">
-                        <li><a href="/destinations/destination1">Destination 1</a></li>
-                        <li><a href="/destinations/destination2">Destination 2</a></li>
-                        <li><a href="/destinations/destination3">Destination 3</a></li>
-                    </ul>
+                      <li><a href="/destinations/destination-kenya">Kenya Destinations</a></li>
+                      <li><a href="/destinations/destination-tanzania">Tanzania Destinations</a></li>
+                      <li><a href="/destinations/destination-rwanda">Rwanda Destinations</a></li>
+                      <li><a href="/destinations/destination-uganda">Uganda Destinations</a></li>
+                  </ul>
                 </li>
                 <li><a href="/safari-packages">Packages</a></li>
                 <li><a href="/accomodation">Accomodation</a></li>
@@ -60,66 +61,60 @@
 
 
     
-    <!-- Welcome and About Pop Expeditions -->  
-    <section class="ezy__about12 light pt-14 md:pt-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+    <!-- Welcome and About Pop Expeditions --> 
+    <div class="relative">
+      <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
+          <section class="flex items-center space-x-4">
+              <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+              <div class="h-6 w-1 bg-blue-900"></div>
+              <p class="text-gray-700">Testimonials</p>
+          </section>
+      </div>
+    </div> 
+    <section class="ezy__about12 light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
         <div class="container mx-auto px-4">
-        <div class="grid grid-cols-12 gap-5 justify-center items-center">
-            <div class="col-span-12 lg:col-span-6">
-            <div class="lg:px-7">
-                <h1 class="md:text-3xl leading-tight font-medium mb-2">Welcome to Pop Expeditions</h1>
-                <p class="text-lg leading-normal opacity-75 my-6">
-                Completely network collaborative web services via user-centric initiatives. Quickly promote sticky
-                testing procedures collaborator before unique process improvements. Since our inception set out in 2012,
-                TalEx has set out to disrupt inception the HR & Talent/Staffing Management industry. Purposefully
-                designed by our founders (Amrita Grewal and Julie Dacar) to connect great companies and great talent.
-                </p>
-                <div class="mt-12">
-                
+            <div class="grid grid-cols-12 gap-5 justify-center items-center">
+                <div class="col-span-12 lg:col-span-6">
+                    <div class="lg:px-7">
+                        <h1 class="md:text-3xl leading-tight font-medium mb-2">Welcome to Pop Expeditions</h1>
+                        <p class="text-lg leading-normal opacity-75 my-6">
+                            Completely network collaborative web services via user-centric initiatives. Quickly promote sticky
+                            testing procedures collaborator before unique process improvements. Since our inception set out in 2012,
+                            TalEx has set out to disrupt inception the HR & Talent/Staffing Management industry. Purposefully
+                            designed by our founders (Amrita Grewal and Julie Dacar) to connect great companies and great talent.
+                        </p>
+                        <div class="mt-12">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-6">
+                    <div class="flex justify-center lg:justify-start lg:ml-12">
+                        <img src="https://cdn.easyfrontend.com/pictures/quiz_1.png" alt="" class="max-w-full" />
+                    </div>
                 </div>
             </div>
-            </div>
-            <div class="col-span-12 lg:col-span-6">
-            <div class="flex justify-center lg:justify-start lg:ml-12">
-                <img src="https://cdn.easyfrontend.com/pictures/quiz_1.png" alt="" class="max-w-full" />
-            </div>
-            </div>
-        </div>
         </div>
     </section>
   
 
 
 <!-- Packages -->
-<section class="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-    
-    <div class="bg-white shadow-md rounded-lg overflow-hidden group">
-        <a href="#" class="block">
-            <img
-              src=""
-              alt=""
-              class="h-[350px] w-full object-cover sm:h-[450px]"
-            />
-          
-            <div class="p-4">
-                <h3 class="text-gray-900 group-hover:underline group-hover:underline-offset-4">
-                  
-                </h3>
-          
-                <p class="mt-1.5 text-pretty text-xs text-gray-500">
-                  
-                </p>
-          
-                <p class="mt-3 text-gray-900"></p>
-            </div>
-        </a>
-    </div>
-    
-</section>
+
 
 
 <!-- Destinations -->
+<div class="relative">
+  <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
+      <section class="flex items-center space-x-4">
+          <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+          <div class="h-6 w-1 bg-blue-900"></div>
+          <p class="text-gray-700">Testimonials</p>
+      </section>
+  </div>
+</div>
 <section class="ezy__service14 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
     <div class="container px-4 mx-auto">
+
       <div class="grid grid-cols-12 mb-6 md:mb-12">
         <div class="col-span-12 lg:col-span-6 lg:col-start-4 text-center">
           <h2 class="text-3xl leading-none md:text-[45px] font-bold mb-6">Our Services</h2>
@@ -239,9 +234,113 @@
 
 
 <!-- Testomonials -->
-
+<div class="relative">
+  <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
+      <section class="flex items-center space-x-4">
+          <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+          <div class="h-6 w-1 bg-blue-900"></div>
+          <p class="text-gray-700">Testimonials</p>
+      </section>
+  </div>
+</div>
+<section class="ezy__testimonial7 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+    <div class="container px-4 mx-auto">
+      <div class="grid grid-cols-12 mb-6 md:mb-12">
+        <div class="col-span-12 lg:col-span-5">
+          <h2 class="text-3xl leading-none md:text-[45px] font-bold mb-6">
+            Everyone should believe in What Our Client Say.
+          </h2>
+        </div>
+        <div class="col-span-12 lg:col-span-4 lg:pl-12">
+          <p class="text-lg opacity-80">
+            It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+            right one for you!
+          </p>
+        </div>
+      </div>
+  
+      <div class="grid grid-cols-3 gap-6">
+        <div class="col-span-3 md:col-span-1">
+          <div class="bg-white dark:bg-slate-800 shadow-xl rounded-2xl p-6 lg:p-12 h-full">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/users/user22.jpg"
+              alt=""
+              class="max-w-full h-auto rounded-full mb-6 border"
+              width="100"
+            />
+            <h4 class="text-xl font-medium mb-1">Akshay Kumar</h4>
+            <p class="mb-6">
+              <span class="fas fa-star text-yellow-500"></span>
+              <span class="fas fa-star text-yellow-500"></span>
+              <span class="fas fa-star text-yellow-500"></span>
+              <span class="fas fa-star-half-alt text-yellow-500"></span>
+              <span class="fas fa-star text-yellow-200 dark:text-opacity-20"></span>
+            </p>
+            <p class="opacity-80">
+              Over third given bring lights divide saying. Fowl, all creeping second saw creature isn't gathered
+              likeness shall fruitful saying let.
+            </p>
+          </div>
+        </div>
+        <div class="col-span-3 md:col-span-1">
+          <div class="bg-white dark:bg-slate-800 shadow-xl rounded-2xl p-6 lg:p-12 h-full">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/users/user4.jpg"
+              alt=""
+              class="max-w-full h-auto rounded-full mb-6 border"
+              width="100"
+            />
+            <h4 class="text-xl font-medium mb-1">Raima Sen</h4>
+            <p class="mb-6">
+              <span class="fas fa-star text-yellow-500"></span>
+              <span class="fas fa-star text-yellow-500"></span>
+              <span class="fas fa-star text-yellow-500"></span>
+              <span class="fas fa-star-half-alt text-yellow-500"></span>
+              <span class="fas fa-star text-yellow-200 dark:text-opacity-20"></span>
+            </p>
+            <p class="opacity-80">
+              Tree the whales fifth for their whose. Deep From fruitful spirit creature morning, fowl greater said, it
+              first creepeth after.
+            </p>
+          </div>
+        </div>
+        <div class="col-span-3 md:col-span-1">
+          <div class="bg-white dark:bg-slate-800 shadow-xl rounded-2xl p-6 lg:p-12 h-full">
+            <img
+              src="https://cdn.easyfrontend.com/pictures/users/user20.jpg"
+              alt=""
+              class="max-w-full h-auto rounded-full mb-6 border"
+              width="100"
+            />
+            <h4 class="text-xl font-medium mb-1">Arjun Kapur</h4>
+            <p class="mb-6">
+              <span class="fas fa-star text-yellow-500"></span>
+              <span class="fas fa-star text-yellow-500"></span>
+              <span class="fas fa-star text-yellow-500"></span>
+              <span class="fas fa-star-half-alt text-yellow-500"></span>
+              <span class="fas fa-star text-yellow-200 dark:text-opacity-20"></span>
+            </p>
+            <p class="opacity-80">
+              Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid
+              blanditiis eligendi qui.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
 <!-- Why us -->
+<div class="relative">
+  <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
+      <section class="flex items-center space-x-4">
+          <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+          <div class="h-6 w-1 bg-blue-900"></div>
+          <p class="text-gray-700">Why us?</p>
+      </section>
+  </div>
+</div>
 <section class="ezy__service3 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
     <div class="container px-4 mx-auto">
       <div class="flex items-center justify-center mb-6 md:mb-12">
@@ -307,7 +406,15 @@
 
 
 <!-- Newsletter -->
-
+<div class="relative">
+  <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
+      <section class="flex items-center space-x-4">
+          <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+          <div class="h-6 w-1 bg-blue-900"></div>
+          <p class="text-gray-700">Get in touch</p>
+      </section>
+  </div>
+</div>
 <section class="newsletter">
     <div class="newstext">
         <h2>Newsletter</h2>

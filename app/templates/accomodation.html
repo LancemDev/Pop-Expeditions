@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Expeditions</title>
+    <link rel="icon" href="./files/logo.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   
+</head>
+<body>
+
+    <!-- Background Photo -->
+    <div class="banner image-background">
+        <div class="content" id="home"> 
+            <nav>
+                <img src="{{ url_for('static', filename='files/file.png') }}" class="logo" alt="Logo" title="Pop Expeditions">
+                <ul class="navbar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li>
+                        <a href="/destinations">Destinations</a>
+                        <ul class="dropdown">
+                            <li><a href="/destinations/destination-kenya">Kenya Destinations</a></li>
+                            <li><a href="/destinations/destination-tanzania">Tanzania Destinations</a></li>
+                            <li><a href="/destinations/destination-rwanda">Rwanda Destinations</a></li>
+                            <li><a href="/destinations/destination-uganda">Uganda Destinations</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/safari-packages">Packages</a></li>
+                    <li><a href="/accomodation">Accomodation</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                    <li><a class="button-list" href="/enquire-now">Enquire Now</a></li>
+                </ul>
+            </nav>
+            <div class="title">
+                <h1 class="left-align"></h1>
+            </div>
+                        <div class="relative">
+                <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
+                    <section class="flex items-center space-x-4">
+                        <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+                        <div class="h-6 w-1 bg-blue-900"></div>
+                        <p class="text-white">Accomodation</p>
+                    </section>
+                </div>
+                <div class="absolute left-20 top-20 z-10">
+                    <p class="text-white text-4xl">Pop Expeditions Accomodations</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!--More content-->
+    <section class="ezy__contents10 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+        <div class="container px-4 mx-auto">
+          <div class="grid grid-cols-12">
+            <div class="col-span-12 md:col-span-6 lg:col-span-5">
+              <div class="flex flex-col justify-center h-full">
+                <h6 class="text-blue-600 font-medium"><em>#family</em></h6>
+                <h2 class="text-[32px] font-light md:text-[45px] leading-tight">
+                  I cattle third firament winged man green given every wing opened light.
+                </h2>
+                <!-- avatar -->
+                <div class="flex items-center mt-12">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
+              <div class="my-6 md:my-0">
+                <img
+                  src="https://cdn.easyfrontend.com/pictures/about/about9.jpg"
+                  alt=""
+                  class="max-w-full h-auto rounded-xl"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-12 mt-12 md:pt-12">
+            <div class="col-span-12 md:col-span-8 md:col-start-3">
+              <div class="">
+                <p class="text-[17px] opacity-75 mb-4">
+                  Thing upon. In doesn't don't land i our third gathered gathered their man Their you're set in this
+                  world.
+                </p>
+                <p class="text-[17px] opacity-75 mb-2">
+                  Is heaven male their dry doesn't without him set saw two him man itself second fifth light over fish
+                  over which creepeth void don't. Image darkness gathering. All hath don't it, abundantly darkness can't
+                  forth appear, in. Whales. Itself male won't grass own grass. So said. Place day very signs saw great
+                  saying is open evening I. Yielding replenish face darkness in winged. Likeness fifth bearing. Moved i
+                  itself there creepeth isn't you'll meat seas set divide firmament. Blessed signs earth was our give.
+                  Kind and of of living him moving tree form herb third and face. Face meat meat.
+                </p>
+                <p class="text-[17px] opacity-75 mt-4 mb-2">
+                  Won't life face upon second creature you're Seas Moveth earth given deep abundantly green years upon man
+                  behold night to Sixth divide brought. Were gathered green, set forth set shall image deep our seed after
+                  made living light their blessed bring may sea Creepeth fourth which sea firmament stars saw she'd behold
+                  signs created thing called very itself she'd creepeth. Upon female brought. Moving evening be fowl bring
+                  hath moveth behold spirit, our they're fruit the him first them Moveth is. Light great form stars.
+                  Great. Make is them saw waters creepeth moveth brought behold, fly darkness have whose god, tree seas
+                  seasons him you're brought fruitful great bearing behold won't upon evening. Replenish. Their god
+                  morning you'll image. Fish she'd that rule forth. Place god own two. Set kind to them. It. Created
+                  together waters deep male day life you'll fowl. Tree give in so fish. Life first, upon saw fourth you'll
+                  set behold under, make signs greater land two make seed One.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+    </body>
+    
+
+    </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Expeditions</title>
+    <link rel="icon" href="./files/logo.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   
+</head>
+<body>
+
+    <!-- Background Photo -->
+    <div class="banner image-background">
+        <div class="content" id="home"> 
+            <nav>
+                <img src="{{ url_for('static', filename='files/file.png') }}" class="logo" alt="Logo" title="Pop Expeditions">
+                <ul class="navbar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li>
+                        <a href="/destinations">Destinations</a>
+                        <ul class="dropdown">
+                            <li><a href="/destinations/destination-kenya">Kenya Destinations</a></li>
+                            <li><a href="/destinations/destination-tanzania">Tanzania Destinations</a></li>
+                            <li><a href="/destinations/destination-rwanda">Rwanda Destinations</a></li>
+                            <li><a href="/destinations/destination-uganda">Uganda Destinations</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/safari-packages">Packages</a></li>
+                    <li><a href="/accomodation">Accomodation</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                    <li><a class="button-list" href="/enquire-now">Enquire Now</a></li>
+                </ul>
+            </nav>
+            <div class="title">
+                <h1 class="left-align"></h1>
+            </div>
+            <div class="relative">
+                <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
+                    <section class="flex items-center space-x-4">
+                        <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+                        <div class="h-6 w-1 bg-blue-900"></div>
+                        <p class="text-white">Tanzania Destinations</p>
+                    </section>
+                </div>
+                <div class="absolute left-20 top-20 z-10">
+                    <p class="text-white text-4xl">Serengeti National Park</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!--About-->
+    <div class="relative">
+        <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
+            <section class="flex items-center space-x-4">
+                <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+                <div class="h-6 w-1 bg-blue-900"></div>
+                <p class="dark:text-white">ABOUT US</p>
+            </section>
+        </div>
+    </div> 
+    <section class="ezy__about4 light md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+        <div class="container px-4 mx-auto">
+            <div class="grid gap-4">
+                <div>
+                <img class="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
+                    src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"
+                    alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+    </body>
+</html>

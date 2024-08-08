@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Expeditions</title>
+    <link rel="icon" href="./files/logo.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   
+</head>
+<body>
+
+    <!-- Background Photo -->
+    <div class="banner image-background">
+        <div class="content" id="home"> 
+            <nav>
+                <img src="{{ url_for('static', filename='files/file.png') }}" class="logo" alt="Logo" title="Pop Expeditions">
+                <ul class="navbar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li>
+                        <a href="/destinations">Destinations</a>
+                        <ul class="dropdown">
+                            <li><a href="/destinations/destination-kenya">Kenya Destinations</a></li>
+                            <li><a href="/destinations/destination-tanzania">Tanzania Destinations</a></li>
+                            <li><a href="/destinations/destination-rwanda">Rwanda Destinations</a></li>
+                            <li><a href="/destinations/destination-uganda">Uganda Destinations</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/safari-packages">Packages</a></li>
+                    <li><a href="/accomodation">Accomodation</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                    <li><a class="button-list" href="/enquire-now">Enquire Now</a></li>
+                </ul>
+            </nav>
+            <div class="title">
+                <h1 class="left-align"></h1>
+            </div>
+            <div class="relative">
+                <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
+                    <section class="flex items-center space-x-4">
+                        <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+                        <div class="h-6 w-1 bg-blue-900"></div>
+                        <p class="text-white">Destination</p>
+                    </section>
+                </div>
+                <div class="absolute left-20 top-20 z-10">
+                    <p class="text-white text-4xl">Tanzania Destinations</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!--About-->
+    <div class="relative">
+        <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
+            <section class="flex items-center space-x-4">
+                <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+                <div class="h-6 w-1 bg-blue-900"></div>
+                <p class="dark:text-white">ABOUT US</p>
+            </section>
+        </div>
+    </div> 
+    <section class="ezy__about4 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+        <div class="container px-4 mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-8">
+            <div>
+              <h2 class="md:text-end text-4xl md:text-6xl leading-tight md:leading-tight font-light mb-0">
+                About the Conference and Developing Amazing Things with Passion since 2016.
+              </h2>
+            </div>
+            <div class="lg:px-4 my-6 lg:my-0">
+              <div
+                class="min-h-[300px] md:h-full bg-center bg-cover"
+                style="background-image: url(https://cdn.easyfrontend.com/pictures/about/about4.jpg)"
+              ></div>
+            </div>
+            <div class="pr-7">
+              <p class="text-base leading-7 opacity-70 mb-0">
+                Created forth two. Behold appear first, kind all i saying fowl man itself moved which every open shall
+                moved subdue appear. Saying life wherein stars. Give dry, own, male had that us third lesser over deep.
+                May every bring in it Whose. Female earth heaven won't behold female.
+              </p>
+              <p class="text-base leading-7 opacity-70 mt-6 mb-0">
+                Moved bearing give a two after. Had. Seas. Man they're. Grass above kind saying thing for that void sixth
+                fly His after it.
+              </p>
+              <p class="text-base leading-7 opacity-70 mt-6 mb-0">
+                The set doesn't moved. Deep don't fruit fowl gathering heaven days moving creeping under from i air. Set
+                it fifth Meat wasness. every bring in it Whose. Female earth heaven won't behold female.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!--Photo Gallery-->
+    <div class="relative">
+        <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
+            <section class="flex items-center space-x-4">
+                <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+                <div class="h-6 w-1 bg-blue-900"></div>
+                <p class="dark:text-white">CHOOSE LOCATIONS</p>
+            </section>
+        </div>
+        <div class="absolute left-20 top-20 z-10">
+            <p class="dark:text-white text-4xl">CHOOSE PLACE</p>
+        </div>
+    </div> 
+    <br /><br />
+    <section class="ezy__about4 light md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+        <div class="container px-4 mx-auto">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                <a href="/serengeti" class="relative group">
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg transition-transform duration-1000 ease-in-out transform group-hover:scale-110 group-hover:opacity-70"
+                        src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"
+                        alt="gallery-photo" />
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-black bg-opacity-50">
+                        <p class="text-white text-lg">Serengeti National Park</p>
+                    </div>
+                </a>
+                <a href="/ngorongoro" class="relative group">
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg transition-transform duration-1000 ease-in-out transform group-hover:scale-110 group-hover:opacity-70"
+                        src="https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"
+                        alt="gallery-photo" />
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-black bg-opacity-50">
+                        <p class="text-white text-lg">Ngorongoro Conservation Area</p>
+                    </div>
+                </a>
+                <a href="/tarangire'" class="relative group">
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg transition-transform duration-1000 ease-in-out transform group-hover:scale-110 group-hover:opacity-70"
+                        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2560&amp;q=80"
+                        alt="gallery-photo" />
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-black bg-opacity-50">
+                        <p class="text-white text-lg">Tarangire National Park</p>
+                    </div>
+                </a>
+                <a href="/lake_manyara" class="relative group">
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg transition-transform duration-1000 ease-in-out transform group-hover:scale-110 group-hover:opacity-70"
+                        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+                        alt="gallery-photo" />
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-black bg-opacity-50">
+                        <p class="text-white text-lg">Lake Manyara National Park</p>
+                    </div>
+                </a>
+                <a href="/ruaha" class="relative group">
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg transition-transform duration-1000 ease-in-out transform group-hover:scale-110 group-hover:opacity-70"
+                        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2762&amp;q=80"
+                        alt="gallery-photo" />
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-black bg-opacity-50">
+                        <p class="text-white text-lg">Ruaha National Park</p>
+                    </div>
+                </a>
+                <a href="/selous" class="relative group">
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg transition-transform duration-1000 ease-in-out transform group-hover:scale-110 group-hover:opacity-70"
+                        src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2832&amp;q=80"
+                        alt="gallery-photo" />
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-black bg-opacity-50">
+                        <p class="text-white text-lg">Selous Game Reserve</p>
+                    </div>
+                </a>
+                <a href="/mikumi" class="relative group">
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg transition-transform duration-1000 ease-in-out transform group-hover:scale-110 group-hover:opacity-70"
+                        src="https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg" alt="gallery-photo" />
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-black bg-opacity-50">
+                        <p class="text-white text-lg">Mikumi National Park</p>
+                    </div>
+                </a>
+                <a href="/katavi" class="relative group">
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg transition-transform duration-1000 ease-in-out transform group-hover:scale-110 group-hover:opacity-70"
+                        src="https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg" alt="gallery-photo" />
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-black bg-opacity-50">
+                        <p class="text-white text-lg">Katavi National Park</p>
+                    </div>
+                </a>
+                <a href="/gombe" class="relative group">
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg transition-transform duration-1000 ease-in-out transform group-hover:scale-110 group-hover:opacity-70"
+                        src="https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1493&amp;q=80"
+                        alt="gallery-photo" />
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-black bg-opacity-50">
+                        <p class="text-white text-lg">Gombe Stream National Park</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="foot">
+            <div class="footer-content">
+                
+                            <div class="footlinks">
+                    <div class="column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="/register">Register</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/destinations">Destinations</a></li>
+                            <li><a href="/safari-packages">Packages</a></li>
+                            <li><a href="/accomodation">Accomodation</a></li>
+                            <li><a href="/contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="column">
+                        <h4>Destinations</h4>
+                        <ul>
+                            <li><a href="/destinations/destination1">Destination 1</a></li>
+                            <li><a href="/destinations/destination2">Destination 2</a></li>
+                            <li><a href="/destinations/destination3">Destination 3</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="/contact-us">Contact Us</a></li>
+                            <li><a href="/faq">FAQs</a></li>
+                            <li><a href="/terms">Terms & Conditions</a></li>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="footlinks">
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <a href="https://www.facebook.com/mohd.rahil.blogger" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/mohdrahil101" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://www.twitter.com/mohdrahil101" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://www.linkedin.com/in/mohdrahil101" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://www.youtube.com/techdollarz" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                        <a href="https://www.mohdrahil.wordpress.com" target="_blank"><i class='bx bxl-wordpress' ></i></a>
+                        <a href="https://www.github.com/mohdrahil101" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="end">
+            <p>Copyright © 2024 Pop Expeditions All Rights Reserved.<br>Website developed by: Abugahh and LancemDev</p>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    </body>
+    </html>

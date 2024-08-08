@@ -23,6 +23,58 @@ def contact():
 def locations():
     return render_template('destinations.html')
 
+@main.route('/destination-kenya')
+def kenya():
+    return render_template('destinations/kenya.html')
+
+@main.route('/destination-tanzania')
+def tanzania():
+    return render_template('destinations/tanzania.html')
+
+@main.route('/destination-uganda')
+def uganda():
+    return render_template('destinations/uganda.html')
+
+@main.route('/destination-rwanda')
+def rwanda():
+    return render_template('destinations/rwanda.html')
+
+@main.route('/serengeti')
+def serengeti():
+    return render_template('tanzania-destinations/serengeti.html')
+
+@main.route('/ngorongoro')
+def ngorongoro():
+    return render_template('ngorongoro.html')
+
+@main.route('/tarangire')
+def tarangire():
+    return render_template('tarangire.html')
+
+@main.route('/lake_manyara')
+def lake_manyara():
+    return render_template('lake_manyara.html')
+
+@main.route('/ruaha')
+def ruaha():
+    return render_template('ruaha.html')
+
+@main.route('/selous')
+def selous():
+    return render_template('selous.html')
+
+@main.route('/mikumi')
+def mikumi():
+    return render_template('mikumi.html')
+
+@main.route('/katavi')
+def katavi():
+    return render_template('katavi.html')
+
+@main.route('/gombe')
+def gombe():
+    return render_template('gombe.html')
+
 @main.route('/register')
 def register():
     return render_template('register.html')
